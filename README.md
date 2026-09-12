@@ -811,19 +811,19 @@ Finally, close the remote VS Code window and select **End Lab** in AWS Academy. 
 
 ## Final checklist
 
-- [ ] I answered `L3-A01`–`L3-A10` in the 15-point Brightspace assignment.
-- [ ] I completed the separate 10-point paper exit ticket during lab.
-- [ ] I completed every [GitHub] block for the 10-point repository check and saved `README.md`.
-- [ ] I combined 11 proteomes, examined the FASTA files, and built the BLAST database with `makeblastdb`.
-- [ ] I retrieved both human queries with `samtools faidx`.
-- [ ] I ran readable and tabular BLAST searches for myoglobin and my assigned protein.
-- [ ] I counted hits before and after filtering and retrieved the filtered sequences with `seqkit grep`.
-- [ ] My myoglobin and assigned-protein directories contain all files listed in Part VI.
-- [ ] Both `.homologs.fas` files are ready for Lab 4.
-- [ ] A TA checked that my assigned `.candidates.tsv` and `.homologs.fas` files are nonempty and contain the same number of records.
-- [ ] I opened the separate literature-search assignment and saved citation information for at least three promising sources.
-- [ ] The latest commit is visible on GitHub and `git status` reports a clean working tree.
-- [ ] I ended the AWS Academy Learner Lab session.
+- [ check] I answered `L3-A01`–`L3-A10` in the 15-point Brightspace assignment.
+- [check ] I completed the separate 10-point paper exit ticket during lab.
+- [ check] I completed every [GitHub] block for the 10-point repository check and saved `README.md`.
+- [ check] I combined 11 proteomes, examined the FASTA files, and built the BLAST database with `makeblastdb`.
+- [ check] I retrieved both human queries with `samtools faidx`.
+- [ check] I ran readable and tabular BLAST searches for myoglobin and my assigned protein.
+- [ check] I counted hits before and after filtering and retrieved the filtered sequences with `seqkit grep`.
+- [ check] My myoglobin and assigned-protein directories contain all files listed in Part VI.
+- [ check] Both `.homologs.fas` files are ready for Lab 4.
+- [ check] A TA checked that my assigned `.candidates.tsv` and `.homologs.fas` files are nonempty and contain the same number of records.
+- [ check] I opened the separate literature-search assignment and saved citation information for at least three promising sources.
+- [ check] The latest commit is visible on GitHub and `git status` reports a clean working tree.
+- [ check] I ended the AWS Academy Learner Lab session.
 
 ## Current technical references
 
