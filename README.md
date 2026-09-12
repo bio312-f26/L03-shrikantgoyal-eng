@@ -212,7 +212,10 @@ A **key** is a field used to identify one record uniquely. The UniProt accession
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G01. (0.5 point)** Record the human myoglobin RefSeq accession, UniProt accession, UniProt review status, and amino-acid sequence length.
 
 ```notes/answer
-
+myoglobin Ref: NP_001349775.1
+Uni prot: P02144
+reviewed and swiss verified
+154 amino acids
 ```
 
 ## Part III. Combine the proteomes and build a BLAST database
@@ -264,7 +267,9 @@ ls /home/bio312-user/bio312-lab03-$MYGIT/blast_db/allprotein.*
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G02. (0.5 point)** Record the combined FASTA sequence count, its first FASTA identifier, and the BLAST database filename extensions.
 
 ```notes/answer
-
+218233
+Hsap|A0A075B6H9|IGLV4-69
+extensions: .pdb,.phr,.pin,.pjs,.pog,.pos,.pot,.psq,.ptf,.pto
 ```
 
 ## Part IV. Use BLAST to find proteins similar to human myoglobin
@@ -371,7 +376,12 @@ head -n 5 /home/bio312-user/bio312-lab03-$MYGIT/myoglobin/myoglobin.blastp.tsv
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G03. (0.5 point)** Paste the complete tabular rows for the human self-hit and the highest-scoring non-self hit.
 
 ```notes/answer
-
+Hsap|P02144|MB  Hsap|P02144|MB  100.000 154     154     154     1.50e-110       312     100
+Hsap|P02144|MB  Sscr|P02189|MB  93.506  154     154     154     4.04e-103       294     100
+Hsap|P02144|MB  Tman|A0A2Y9DG99|MB      90.260  154     154     154     1.93e-98        282     100
+Hsap|P02144|MB  Oros|A0A2U3X238|MB      88.312  154     154     154     6.54e-98        281     100
+Hsap|P02144|MB  Zcal|P02161|MB  87.662  154     154     154     3.21e-97        279     100
+(base) [bio312-user@ip-172-31-82-182 bio312-lab03-shrikantgoyal-eng]$ 
 ```
 
 ### Filter the BLAST hits
@@ -439,7 +449,19 @@ column -t -s $'\t' /home/bio312-user/bio312-lab03-$MYGIT/myoglobin/myoglobin.spe
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G04. (0.5 point)** Record the number of myoglobin hits before and after filtering and the count for each species.
 
 ```notes/answer
-
+41->12
+species_short_code  common_name          candidate_protein_records
+Hsap                Human                1
+Pmac                Sperm whale          1
+Bmus                Blue whale           1
+Btau                Cattle               1
+Sscr                Pig                  1
+Oros                Pacific walrus       1
+Zcal                California sea lion  1
+Clup                Dog                  1
+Mfur                Domestic ferret      1
+Tman                Florida manatee      1
+Lafr                African elephant     2
 ```
 
 > <img src="img/brightspace.png" alt="Brightspace question" width="20" height="20"> [Brightspace] **L3-A08. (2 points)** How many myoglobin hits were present before and after filtering? How many were removed, and did every species retain at least one hit?
@@ -487,7 +509,11 @@ Search for the accession at [UniProtKB](https://www.uniprot.org/uniprotkb/). Rea
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G05. (0.5 point)** Record your project ID, UniProt accession, protein name, review status, and sequence length.
 
 ```notes/answer
-
+ID: ASS1
+Acession: P00966
+Name: Argininosuccinate synthase
+Reviewed(Swiss prot)
+length: 412 amino acids
 ```
 
 ### Retrieve your query protein
@@ -535,7 +561,7 @@ Later labs will ask you to make more of these command adaptations yourself. For 
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G06, part 1. (0.5 point)** Before running the commands, explain which parts of the two myoglobin BLAST commands you need to change, which parts remain the same, and how your filenames avoid overwriting the myoglobin results.
 
 ```notes/answer
-
+The query now points to the ASS1 fasta. The output command will be different to accomidate different rows to be readable and the tabluar report. The database used is the same because its searching through all 11 proteomes, the e value and command output format is the same.Saving the new results in projects/ASS1 with ASS1 filenames keeps them separate from the results in myoglobin and avoids overwriting them.
 ```
 
 Copy both myoglobin BLAST commands into the next answer block and adapt them. Use these two output filenames:
@@ -546,7 +572,9 @@ Copy both myoglobin BLAST commands into the next answer block and adapt them. Us
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G06, part 2. (0.5 point)** Paste your two adapted `blastp` commands here. Save `README.md`, then copy each command from your answer block into the terminal and run it.
 
 ```notes/answer
+blastp -query /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/query.fasta -db /home/bio312-user/bio312-lab03-$MYGIT/blast_db/allprotein -evalue 1e-10 -max_target_seqs 5000 -max_hsps 1 -num_threads 2 -outfmt 0 -out /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.blastp.txt
 
+blastp -query /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/query.fasta -db /home/bio312-user/bio312-lab03-$MYGIT/blast_db/allprotein -evalue 1e-10 -max_target_seqs 5000 -max_hsps 1 -num_threads 2 -outfmt "6 qseqid sseqid pident length qlen slen evalue bitscore qcovs" -out /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.blastp.tsv
 ```
 
 Confirm that both output files exist and contain results:
@@ -564,7 +592,7 @@ wc -l /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.bla
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G07, part 1. (0.5 point)** Record the number of BLAST hits before filtering.
 
 ```notes/answer
-
+13
 ```
 
 Examine the readable report. Look at the self-hit, the highest-scoring match from another mammal, and how the matches change farther down the list.
@@ -585,7 +613,9 @@ The filtering values and column numbers remain the same.
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G07, part 2. (0.5 point)** Paste your two adapted `awk` commands here. Save `README.md`, then copy each command from your answer block into the terminal and run it.
 
 ```notes/answer
+awk '$7 <= 1e-10 && $3 >= 35 && $9 >= 70' /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.blastp.tsv > /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.candidates.tsv
 
+awk '{print $2}' /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.candidates.tsv | sort -u > /home/bio312-user/bio312-lab03-$MYGIT/projects/$PROJECT_ID/$PROJECT_ID.candidate_ids.txt
 ```
 
 Count the hits after filtering:
@@ -629,7 +659,25 @@ Choose the highest-scoring non-self hit in your tabular output. Also consider wh
 > <img src="img/github.png" alt="GitHub notes" width="20" height="20"> [GitHub] **L3-G07, part 3. (0.5 point)** Record the number of hits after filtering, how many were removed, all 11 species counts, and the gene-symbol summary. Paste the complete tabular row for the highest-scoring non-self hit. Then, in one or two sentences, describe something you learned about the protein or its family from the UniProt record and your BLAST results.
 
 ```notes/answer
+11 hits after filter
+species_short_code  common_name          candidate_protein_records
+Hsap                Human                1
+Pmac                Sperm whale          0
+Bmus                Blue whale           1
+Btau                Cattle               2
+Sscr                Pig                  1
+Oros                Pacific walrus       1
+Zcal                California sea lion  1
+Clup                Dog                  1
+Mfur                Domestic ferret      1
+Tman                Florida manatee      1
+Lafr                African elephant     1
 
+11 ASS1
+Highest-scoring non-self hit:
+Hsap|P00966|ASS1	Mfur|M3YMP6|ASS1	98.301	412	412	412	0.0	847	100
+
+My filtered BLAST results contain 11 candidate proteins across 10 species, all labeled ASS1. No sperm whale record passed the screening, but this alone does not show that the species has lost the gene.
 ```
 
 ### TA checkpoint: confirm that your project is ready for Lab 4

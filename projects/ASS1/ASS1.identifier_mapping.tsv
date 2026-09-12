@@ -1,0 +1,12 @@
+project_id	project_fasta_id	source_id	species_short_code	uniprot_accession	NCBI_taxon_id	original_gene_symbol	protein_name	reviewed_status	sequence_length	sequence_sha256
+ASS1	ASS1|P00966|9606|Hsap	Hsap|P00966|ASS1	Hsap	P00966	9606	ASS1	Argininosuccinate synthase	reviewed	412	59330d252f8e0edf5b76621004534a013453ee24e26bc992b73bd10125f032c8
+ASS1	ASS1|A0A8C0I617|9771|Bmus	Bmus|A0A8C0I617|ASS1	Bmus	A0A8C0I617	9771	ASS1	Argininosuccinate synthase	unreviewed	412	e512458081da15772c4ea52bfbed9f07048204cf82de8cc5d2f095db9ef7ff32
+ASS1	ASS1|A0AAF6Z809|9913|Btau	Btau|A0AAF6Z809|ASS1	Btau	A0AAF6Z809	9913	ASS1	Argininosuccinate synthase	unreviewed	426	f994d2fa84992746992360bf7d968a919f04dc7492de160009dae5e92eaa4ed1
+ASS1	ASS1|P14568|9913|Btau	Btau|P14568|ASS1	Btau	P14568	9913	ASS1	Argininosuccinate synthase	reviewed	412	628f315cae5a24b1bf7767ad2d68ab925a5ce1725d73bf71804b9bb5c89114fe
+ASS1	ASS1|A0A287A9G4|9823|Sscr	Sscr|A0A287A9G4|ASS1	Sscr	A0A287A9G4	9823	ASS1	Argininosuccinate synthase	unreviewed	428	67548d55d86ba6903ced243209b642a5b3031d5cbb9812526433dc820ec0c14f
+ASS1	ASS1|A0A2U3VD49|9708|Oros	Oros|A0A2U3VD49|ASS1	Oros	A0A2U3VD49	9708	ASS1	Argininosuccinate synthase	unreviewed	412	5959c3b91f4ae3595bb8351ded15cf8242fc9232b53650a0bf5d6b02d40b4f78
+ASS1	ASS1|A0A6J2EZV5|9704|Zcal	Zcal|A0A6J2EZV5|ASS1	Zcal	A0A6J2EZV5	9704	ASS1	Argininosuccinate synthase	unreviewed	412	7dd50ce824eb472d36812c29cf8e7ef02990c6ae7c4106b4d38fa62e1c7c3b42
+ASS1	ASS1|A0A8I3P8L4|9615|Clup	Clup|A0A8I3P8L4|ASS1	Clup	A0A8I3P8L4	9615	ASS1	Argininosuccinate synthase	unreviewed	412	9a750a030e21bf15ad3149b13658b7a74ebc29a5dfd132324aa6eb45aeece65c
+ASS1	ASS1|M3YMP6|9669|Mfur	Mfur|M3YMP6|ASS1	Mfur	M3YMP6	9669	ASS1	Argininosuccinate synthase	unreviewed	412	fcf964b5f171cf1985d91c768ddb819425cd07aa4f3fb02033b06d6507293270
+ASS1	ASS1|A0A2Y9QT23|127582|Tman	Tman|A0A2Y9QT23|ASS1	Tman	A0A2Y9QT23	127582	ASS1	Argininosuccinate synthase	unreviewed	412	7001b977c35a72370c7cfdf7caca3118e438555aacb1cf62e8f883352074bff3
+ASS1	ASS1|G3SMU8|9785|Lafr	Lafr|G3SMU8|ASS1	Lafr	G3SMU8	9785	ASS1	Argininosuccinate synthase	unreviewed	412	32e1b8a6b4c81aae0cb161715eec520b9af06f00019fefc517b3a018cb5aa5fc
