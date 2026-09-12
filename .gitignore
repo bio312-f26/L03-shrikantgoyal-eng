@@ -1,0 +1,15 @@
+# Rebuildable combined FASTA and local BLAST database
+/allprotein.fasta
+/allprotein.fasta.fai
+/blast_db/
+
+# Temporary files created by the checked scripts
+/allprotein.fasta.tmp.*
+*.tmp
+__pycache__/
+
+# Operating-system and editor files
+.DS_Store
+.vscode/
+
+# Student result directories are intentionally not ignored.

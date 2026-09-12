@@ -1,0 +1,12 @@
+species_short_code	scientific_name	common_name	NCBI_taxon_id	UniProt_proteome_id	source_assembly_id	aquatic_or_terrestrial_category	habitat_detail	independent_aquatic_transition	terrestrial_comparison_lineage	source_version_date
+Hsap	Homo sapiens	Human	9606	UP000005640	GCA_000001405.29	terrestrial	terrestrial	none	outgroup	UniProt 2026_02; 2026-09-04
+Pmac	Physeter macrocephalus	Sperm whale	9755	UP000248484	GCF_002837175.3	aquatic	fully_aquatic_marine	cetacean	cetartiodactyl	UniProt 2026_02; 2026-09-04
+Bmus	Balaenoptera musculus	Blue whale	9771	UP000694857	GCF_009873245.2	aquatic	fully_aquatic_marine	cetacean	cetartiodactyl	UniProt 2026_02; 2026-09-04
+Btau	Bos taurus	Cattle	9913	UP000009136	GCA_002263795.4	terrestrial	terrestrial	none	cetartiodactyl	UniProt 2026_02; 2026-09-04
+Sscr	Sus scrofa	Pig	9823	UP000008227	GCA_000003025.6	terrestrial	terrestrial	none	cetartiodactyl	UniProt 2026_02; 2026-09-04
+Oros	Odobenus rosmarus divergens	Pacific walrus	9708	UP000245340	GCF_000321225.1	aquatic	amphibious_marine	pinniped	carnivoran	UniProt 2026_02; 2026-09-04
+Zcal	Zalophus californianus	California sea lion	9704	UP000515165	GCF_009762305.2	aquatic	amphibious_marine	pinniped	carnivoran	UniProt 2026_02; 2026-09-04
+Clup	Canis lupus familiaris	Dog	9615	UP000805418	GCA_014441545.1	terrestrial	terrestrial	none	carnivoran	UniProt 2026_02; 2026-09-04
+Mfur	Mustela putorius furo	Domestic ferret	9669	UP000000715	GCF_011764305.1	terrestrial	terrestrial	none	carnivoran	UniProt 2026_02; 2026-09-04
+Tman	Trichechus manatus latirostris	Florida manatee	127582	UP000248480	GCF_000243295.1	aquatic	fully_aquatic_freshwater_coastal	sirenian	paenungulate	UniProt 2026_02; 2026-09-04
+Lafr	Loxodonta africana	African elephant	9785	UP000007646	GCA_000001905.1	terrestrial	terrestrial	none	paenungulate	UniProt 2026_02; 2026-09-04

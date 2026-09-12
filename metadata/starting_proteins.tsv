@@ -1,0 +1,25 @@
+project_id	gene_symbol	human_uniprot_accession	protein_name	workflow_note
+NGB	NGB	Q9NPG2	Neuroglobin	Globin-superfamily candidates may require later tree evaluation.
+CAT	CAT	P04040	Catalase	A monomer sequence does not describe the complete homotetramer.
+PARK7	PARK7	Q99497	Protein DJ-1	Related peptidase-family candidates may require later tree evaluation.
+PGK1	PGK1	P00558	Phosphoglycerate kinase 1	Retain genuine PGK-family paralogs for later evaluation.
+CS	CS	O75390	Citrate synthase, mitochondrial	Mitochondrial targeting peptides can align differently from the mature protein.
+MDH2	MDH2	P40926	Malate dehydrogenase, mitochondrial	Cytosolic MDH-family paralogs may appear in the discovery set.
+OXCT1	OXCT1	P55809	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial	OXCT-family candidates may require later tree evaluation.
+GCLC	GCLC	P48506	Glutamate-cysteine ligase catalytic subunit	Protein sequence alone does not measure expression or enzyme activity.
+GCLM	GCLM	P48507	Glutamate-cysteine ligase modifier subunit	A monomer sequence does not describe the GCLC-GCLM complex.
+GSS	GSS	P48637	Glutathione synthetase	Protein sequence alone does not measure glutathione concentration.
+PGM1	PGM1	P36871	Phosphoglucomutase-1	PGM-family candidates may require later tree evaluation.
+ASL	ASL	P04424	Argininosuccinate lyase	Functional annotations are not by themselves evidence of aquatic adaptation.
+ASS1	ASS1	P00966	Argininosuccinate synthase	A missing screened record is not proof of gene loss.
+BLVRA	BLVRA	P53004	Biliverdin reductase A	Distinguish biliverdin reductase A from related proteins during later evaluation.
+ETFA	ETFA	P13804	Electron transfer flavoprotein subunit alpha	ETFB is a different subunit; a monomer does not describe the assembled complex.
+ETFDH	ETFDH	Q16134	Electron transfer flavoprotein-ubiquinone oxidoreductase	A monomer sequence does not include cofactors or the assembled complex.
+PCNA	PCNA	P12004	Proliferating cell nuclear antigen	Multiple source records do not by themselves establish an adaptive copy-number gain.
+SDHA	SDHA	P31040	Succinate dehydrogenase flavoprotein subunit	SDHA and SDHB are different subunits rather than replicate proteins.
+FH	FH	P07954	Fumarate hydratase	Different cellular locations do not necessarily imply different paralogs.
+TPI1	TPI1	P60174	Triosephosphate isomerase	Multiple source records require annotation and tree evaluation.
+PDHB	PDHB	P11177	Pyruvate dehydrogenase E1 component subunit beta, mitochondrial	A beta-subunit sequence does not describe the entire enzyme complex.
+DLD	DLD	P09622	Dihydrolipoyl dehydrogenase, mitochondrial	Participation in multiple enzyme complexes is not evidence of aquatic adaptation.
+HSD17B10	HSD17B10	Q99714	3-hydroxyacyl-CoA dehydrogenase type-2	Targeting sequence and multiple functional annotations require care.
+SUCLG1	SUCLG1	P53597	Succinate--CoA ligase subunit alpha, mitochondrial	Multiple source records require annotation and tree evaluation.
